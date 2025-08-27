@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru" class="theme-auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light">
+    <title>Сложно сосредоточиться</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    
+    <!-- CSS в правильном порядке -->
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/dark.css">
+    <link rel="stylesheet" href="./styles/light.css">
+    
+    <script src="./scripts/script.js" defer></script>
+  </head>
+  <body class="page">
+    <header class="header decorated-zone">
+      <div class="header__decoration" aria-hidden="true">REC</div>
+      <nav class="header__theme-menu">
+        <ul class="header__theme-menu-list">
+          <li class="header__theme-menu-item">
+            <button class="header__theme-menu-button header__theme-menu-button_type_light">
+              День
+            </button>
+          </li>
+          <li class="header__theme-menu-item">
+            <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" disabled>
+              Авто
+            </button>
+          </li>
+          <li class="header__theme-menu-item">
+            <button class="header__theme-menu-button header__theme-menu-button_type_dark">
+              Неон
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="header__title">no focus</h1>
+      <p class="header__subtitle title-decor">Что делать, когда не можете работать</p>
+    </header>
+
+    <main class="main">
+      <!-- Секция причин -->
+      <section class="section">
+        <h2 class="section__title">Почему не получается сосредоточиться</h2>
+        <div class="section__content">
+          <article class="card">
+            <h3 class="card__title title-decor">Многозадачность</h3>
+            <p class="card__text">
+              Попытки сделать несколько дел одновременно снижают эффективность каждого. 
+              Мозг постоянно переключается между задачами, что приводит к потере фокуса.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Усталость</h3>
+            <p class="card__text">
+              Недостаток сна и отдыха значительно ухудшают концентрацию. 
+              При усталости мозг не может эффективно обрабатывать информацию.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Отвлекающие факторы</h3>
+            <p class="card__text">
+              Соцсети, уведомления и коллеги мешают focused work. 
+              Каждое отвлечение требует времени на повторное погружение в задачу.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Секция решений -->
+      <section class="section">
+        <h2 class="section__title">Что поможет</h2>
+        <div class="section__content">
+          <article class="card">
+            <h3 class="card__title title-decor">Техника Pomodoro</h3>
+            <p class="card__text">
+              25 минут работы → 5 минут перерыва. Повторить 4 раза → длинный перерыв.
+              Эта техника помогает поддерживать концентрацию и предотвращает выгорание.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Глубокая работа</h3>
+            <p class="card__text">
+              Выделяйте блоки времени для работы без отвлечений. 
+              Отключайте уведомления и предупреждайте коллег о вашей недоступности.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Digital detox</h3>
+            <p class="card__text">
+              Временное отключение уведомлений и соцсетей. 
+              Начните с малого — отключайте телефон на 1-2 часа в день.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Секция с акцентом -->
+      <section class="section section-accent">
+        <h2 class="section__title">Как концентрироваться лучше</h2>
+        <div class="section__content">
+          <article class="card card-accent">
+            <h3 class="card__title title-decor card__title-accent">Приоритизация</h3>
+            <p class="card__text">
+              Определите самые важные задачи на день. Сконцентрируйтесь на них в первую очередь.
+              <a href="#" class="card__link">Метод Айви Ли</a> поможет в расстановке приоритетов.
+            </p>
+          </article>
+          <article class="card card-accent">
+            <h3 class="card__title title-decor card__title-accent">Рабочая среда</h3>
+            <p class="card__text">
+              Организуйте пространство для работы. Уберите лишнее со стола, 
+              настройте комфортное освещение и температуру.
+            </p>
+          </article>
+          <article class="card card-accent">
+            <h3 class="card__title title-decor card__title-accent">Перерывы</h3>
+            <p class="card__text">
+              Регулярные короткие перерывы помогают поддерживать концентрацию. 
+              Вставайте, разминайтесь, смотрите вдаль.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Галерея -->
+      <section class="section gallery">
+        <h2 class="section__title">Галерея фокуса</h2>
+        <div class="gallery__content">
+          <img src="https://picsum.photos/seed/1/800/600" alt="Рабочее пространство с ноутбуком и блокнотом" class="gallery__image" loading="lazy">
+          <img src="https://picsum.photos/seed/2/800/600" alt="Человек работает за столом с концентрацией" class="gallery__image" loading="lazy">
+          <img src="https://picsum.photos/seed/3/800/600" alt="Таймер Pomodoro на телефоне" class="gallery__image" loading="lazy">
+          <img src="https://picsum.photos/seed/4/800/600" alt="Книги по продуктивности на полке" class="gallery__image" loading="lazy">
+          <img src="https://picsum.photos/seed/5/800/600" alt="Человек делает перерыв, пьёт кофе" class="gallery__image" loading="lazy">
+          <img src="https://picsum.photos/seed/6/800/600" alt="Планировщик задач с выделенными приоритетами" class="gallery__image" loading="lazy">
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer decorated-zone">
+      <p class="footer__text">Сосредоточьтесь на важном</p>
+    </footer>
+  </body>
+</html>

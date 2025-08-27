@@ -1,0 +1,73 @@
+/* Светлая тема - принудительная */
+:root.theme-light {
+  /* Переменные светлой темы */
+  --text-color: #353430;
+  --bg-color: #fff1f7;
+  --accent-color: #ff8dcb;
+  --card-bg: #fff1f7;
+  --decor-color: #353430;
+  --title-decor-bg: #ff8dcb;
+  --title-decor-color: #353430;
+  --link-shadow: #ff8dcb;
+  --bg-image: url('../images/cover-image-light.png');
+  --button-hover-border: rgba(50, 49, 45, 0.4);
+}
+
+.theme-light .header__decoration {
+  display: none;
+}
+
+.theme-light .header__title {
+  text-shadow: 4px 4px 0 var(--title-decor-bg);
+}
+
+.theme-light .footer__text {
+  text-shadow: 2px 2px 0 var(--title-decor-bg);
+}
+
+.theme-light .card__link {
+  text-shadow: 2px 2px 0 var(--link-shadow);
+}
+
+.theme-light .decorated-zone::before,
+.theme-light .decorated-zone::after {
+  border-color: var(--decor-color);
+}
+
+/* Светлая тема - системная (prefers-color-scheme) */
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Дублируем те же переменные, что и для принудительной светлой темы */
+    --text-color: #353430;
+    --bg-color: #fff1f7;
+    --accent-color: #ff8dcb;
+    --card-bg: #fff1f7;
+    --decor-color: #353430;
+    --title-decor-bg: #ff8dcb;
+    --title-decor-color: #353430;
+    --link-shadow: #ff8dcb;
+    --bg-image: url('../images/cover-image-light.png');
+    --button-hover-border: rgba(50, 49, 45, 0.4);
+  }
+
+  :root .header__decoration {
+    display: none;
+  }
+
+  :root .header__title {
+    text-shadow: 4px 4px 0 var(--title-decor-bg);
+  }
+
+  :root .footer__text {
+    text-shadow: 2px 2px 0 var(--title-decor-bg);
+  }
+
+  :root .card__link {
+    text-shadow: 2px 2px 0 var(--link-shadow);
+  }
+
+  :root .decorated-zone::before,
+  :root .decorated-zone::after {
+    border-color: var(--decor-color);
+  }
+}
