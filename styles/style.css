@@ -244,6 +244,7 @@ body {
 @media (width >= 768px) {
   .header {
     display: flex;
+    
     flex-direction: column; 
     margin-block-end: 60px;
   }
@@ -478,6 +479,7 @@ body {
   }
 
   .header {
+    
     display: flex;
     flex-direction: column; 
     margin-block-end: 40px;
