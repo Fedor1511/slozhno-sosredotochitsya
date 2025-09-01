@@ -1,24 +1,39 @@
+:root.theme-dark {
+  --text-color: #F1B2CE;
+  --bg-color: #000028;
+  --accent-color: #FF0070;
+  --card-bg: var(--bg-color);
+  --decor-color: #FF0070;
+  --title-decor-bg: #FF0070;
+  --title-decor-color: #000028;
+  --link-shadow: #FF0070;
+  --button-hover-border: rgba(255, 0, 112, 0.4);
+  --text-shadow: 4px 4px 0 var(--accent-color);
+  --footer-text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.theme-dark {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
 .theme-dark .header {
   background-image: url(../images/cover-image-dark.png);
 }
 
-.theme-dark .section {
-  margin-inline: 20px;
-}
-
-.theme-dark .section__title {
-  color: var(--decor-color);
-  margin-inline-start: 0;
-  margin-block-end: 20px;
-}
-
 .theme-dark .header__decoration {
   display: block;
+  color: var(--accent-color);
 }
 
 .theme-dark .header__title {
   color: #DB00FF;
   text-shadow: var(--text-shadow);
+}
+
+.theme-dark .header__subtitle {
+  background-color: var(--title-decor-bg);
+  color: var(--title-decor-color);
 }
 
 .theme-dark .card__text {
@@ -49,6 +64,7 @@
 
 .theme-dark .header__theme-menu-button_active {
   border-color: var(--decor-color);
+  pointer-events: none;
 }
 
 .theme-dark .title-decor {
@@ -60,13 +76,22 @@
   text-shadow: 2px 2px 0 var(--link-shadow);
 }
 
-@media (width >= 768px) {
-  .theme-dark .section {
-    margin-inline: 0;
-  }
+.theme-dark .section__title {
+  color: var(--decor-color);
 }
 
-@media (width >= 1024px) {
+.theme-dark .section {
+  margin-inline: 0;
+}
+
+.theme-dark .section,
+.theme-dark .header,
+.theme-dark .main,
+.theme-dark .footer {
+  margin: 0;
+}
+
+@media (width >= 768px) {
   .theme-dark .header__title {
     text-shadow: 4px 4px 0 var(--accent-color);
   }
@@ -76,16 +101,9 @@
   }
 }
 
-:root.theme-dark {
-  --text-color: #F1B2CE;
-  --bg-color: #000028;
-  --accent-color: #FF0070;
-  --card-bg: #000028;
-  --decor-color: #FF0070;
-  --title-decor-bg: #FF0070;
-  --title-decor-color: #000028;
-  --link-shadow: #FF0070;
-  --button-hover-border: #FF0070;
-  --text-shadow: 4px 4px 0 var(--accent-color);
-  --footer-text-shadow: 2px 2px 0 var(--accent-color);
+@media (width >= 1024px) {
+  .theme-dark .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
 }
