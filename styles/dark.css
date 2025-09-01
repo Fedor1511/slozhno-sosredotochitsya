@@ -7,7 +7,7 @@
   --title-decor-bg: #FF0070;
   --title-decor-color: #000028;
   --link-shadow: #FF0070;
-  --button-hover-border: rgba(255, 0, 112, 0.4);
+  --button-hover-border: #FF0070;
   --text-shadow: 4px 4px 0 var(--accent-color);
   --footer-text-shadow: 2px 2px 0 var(--accent-color);
 }

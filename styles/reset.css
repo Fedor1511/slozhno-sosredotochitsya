@@ -1,0 +1,52 @@
+/* Reset margins and padding for all elements */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Specific reset for body */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset for specific elements */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+figure, hr, fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset lists */
+ol, ul {
+    list-style: none;
+}
+
+/* Reset links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reset buttons */
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Reset images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
