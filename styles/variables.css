@@ -18,6 +18,10 @@
   --button-hover-border: rgba(255, 0, 112, 0.4);
 }
 
+.theme-auto .header {
+  background-image: url(../images/cover-image-dark.png);
+}
+
 @media (width >= 1024px) {
   :root {
     --section-gap: 100px;

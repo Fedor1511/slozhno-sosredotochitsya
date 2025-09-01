@@ -151,7 +151,7 @@
   margin: 0;
   font-size: inherit;
   font-weight: 700;
-  color: var(--section-title-color, var(--decor-color, #FF0070));
+  color: var(--decor-color);
 }
 
 .section__content {
